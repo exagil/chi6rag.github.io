@@ -1,0 +1,51 @@
+
+      body {
+        overflow-x: hidden;
+      }
+
+      /* navbar */
+
+      .wrapper {
+        height:100vh; width:100vw;
+        background-position: top;
+      }
+      #nav-trans {
+        background:transparent;
+        /*border-bottom: 0px solid transparent;*/
+        box-shadow: none;
+        min-height: 70px;
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 0px;
+      }
+      .navbar-nav li a, .navbar-brand {
+        line-height: 50px;
+        font-family: 'Muli', sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+
+      .navbar-default .navbar-nav > li > a:hover{
+        font-weight: bold;
+      }
+
+      .logo-trans {
+        width: 50px; height: auto;
+        position: relative; bottom: 8px;
+        display: inline-block;
+      }
+
+      /* navbar ENDS */
+
+
+      /* Portfolio */
+      .col-md-3 {
+      padding-left: 0px; padding-right: 0px;
+      margin-left: 0px; margin-right: 0px;
+      }
+      .container-fluid {
+        padding-left: 0px; padding-right: 0px;
+        margin-left: 0px; margin-right: 0px;
+        overflow-x: hidden;
+      }
+
+      /* Portfolio ENDS */

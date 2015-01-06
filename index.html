@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.css">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
   <style type="text/css">
     body {
       overflow-x: hidden;
@@ -30,11 +32,29 @@
     }
     .navbar-nav li a, .navbar-brand {
       line-height: 50px;
+      font-family: 'Muli', sans-serif;
+      text-transform: uppercase;
     }
+
+    .navbar-default .navbar-nav > li > a {
+      color: #3a3537;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover{
+      font-weight: bold;
+    }
+
     .logo-trans {
       width: 50px; height: auto;
       position: relative; bottom: 8px;
       display: inline-block;
+    }
+
+    .jumbotron-wrapper-main-text, .jumbotron-wrapper-main-text>h2 {
+      text-align: center;
+      font-family: 'Karla'; font-weight: 200;
+      font-size: 42px; color: #4A4A4A;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -57,18 +77,17 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Work With Me</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
       </nav><!-- /.navbar -->  
     </div><!-- /.row -->
 
-    <div class="jumbotron jumbotron-wrapper-main-text">
-      <h2>Hi! I am Chirag</h2>
-    </div>
+    
   </div>  <!-- /. container-fluid -->
   <!-- jQuery CDN -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

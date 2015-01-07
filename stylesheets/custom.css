@@ -1,6 +1,9 @@
 
       body {
         overflow-x: hidden;
+        font-family: 'Muli', sans-serif;
+        text-transform: uppercase;
+        color: #222222;
       }
 
       /* navbar */
@@ -19,9 +22,13 @@
       }
       .navbar-nav li a, .navbar-brand {
         line-height: 50px;
-        font-family: 'Muli', sans-serif;
-        text-transform: uppercase;
+        /*font-family: 'Muli', sans-serif;*/
+        /*text-transform: uppercase;*/
         font-size: 18px;
+      }
+      
+      .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover{
+        color: #222222;
       }
 
       .navbar-default .navbar-nav > li > a:hover{
@@ -33,6 +40,9 @@
         position: relative; bottom: 8px;
         display: inline-block;
       }
+
+      
+
 
       /* navbar ENDS */
 
@@ -49,3 +59,57 @@
       }
 
       /* Portfolio ENDS */
+
+      
+      /* footer */
+
+      .footer h3, .footer h4{
+        text-align: center;
+        word-spacing: 10px;
+        margin: 20px 10px 10px 20px;
+      }
+
+      .footer h4 {
+        color: #737373;
+        margin-bottom: 70px;
+      }
+
+      .row {
+        margin-left: 0px; margin-right: 0px;
+      }
+
+      .pattern {
+        height: 20vh; width: 100vw;
+        background-image: url('http://chi6rag.net/web_design/images/swirl_pattern.png');
+      }
+
+      .footer-social {
+        text-align: center;
+        position: relative; top: 8vh; right: 1vw;
+      }
+
+      .footer-social>li {
+        display: inline;
+        margin: 20px;
+      }
+
+      .footer-social li a, .footer-social li a:hover {
+        text-decoration: none;
+      }
+
+      .icon-github:hover {
+        color: black;
+      }
+
+      .icon-google-plus:hover {
+        color: red;
+      }
+
+      .icon-twitter:hover {
+        color: #0084B4;
+      }
+
+      .icon-github, .icon-google-plus, .icon-twitter {
+        color: #222222;
+      }
+      /* footer ENDS */

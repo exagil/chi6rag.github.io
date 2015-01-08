@@ -119,13 +119,16 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $('document').ready(function(){
+      $('img').on('click', function(){
+        
+        var parentDiv = $(this).parent().parent();
+        parentDiv.after("<div class='row portfolio'><div class='col-md-12' style='height: 70vh; background-color: black;'></div></div>");
+        
+      })
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-

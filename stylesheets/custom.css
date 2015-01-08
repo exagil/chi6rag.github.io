@@ -58,6 +58,10 @@
         overflow-x: hidden;
       }
 
+      .portfolio img {
+        width: 100%;
+      }
+      
       /* Portfolio ENDS */
 
       
@@ -113,3 +117,5 @@
         color: #222222;
       }
       /* footer ENDS */
+
+      

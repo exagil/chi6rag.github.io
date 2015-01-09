@@ -22,8 +22,6 @@
       }
       .navbar-nav li a, .navbar-brand {
         line-height: 50px;
-        /*font-family: 'Muli', sans-serif;*/
-        /*text-transform: uppercase;*/
         font-size: 18px;
       }
       
@@ -71,6 +69,7 @@
         right: 0;
         bottom: 0;
         background-color: rgba(0,0,0,.9);
+        position: relative;
       }
 
       .excerpt:hover {
@@ -79,6 +78,25 @@
 
       .excerpt:hover img {
         opacity: 0.1;
+      }
+
+      /* On Hover Text */
+
+      .on-hover-heading {
+        position: absolute;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+        font-weight: 700;
+      }
+
+      .on-hover-paragraph {
+        display: inline;
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        text-transform: none;
+        line-height: 140%;
       }
 
       /* Portfolio ENDS */

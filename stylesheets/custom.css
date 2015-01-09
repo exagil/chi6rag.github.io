@@ -61,7 +61,26 @@
       .portfolio img {
         width: 100%;
       }
-      
+
+      .excerpt {
+        background-repeat: no-repeat;
+        background-position: 90% 85%;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.9);
+      }
+
+      .excerpt:hover {
+        background-color: black;
+      }
+
+      .excerpt:hover img {
+        opacity: 0.1;
+      }
+
       /* Portfolio ENDS */
 
       

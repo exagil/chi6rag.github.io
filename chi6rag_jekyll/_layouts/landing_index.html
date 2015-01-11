@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en" class="no-js"> 
+  <head> 
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="http://faviconist.com/icons/81ae97e09407fc8b18834c31dded812f/favicon.ico" />
+    <title>Hi! I'm Chirag | A Software Developer and an Aspiring Entrepreneur</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.chi6rag.net/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    
+    <!-- jQuery CDN -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type='text/javascript' src="{{ "/javascripts/jquery.particleground.min.js" | prepend: site.baseurl }}"></script>
+  </head>
+
+  <body>
+  <div id="particles">
+    <div class="intro">
+      <h1 class="custom-font">Hi!&nbsp;I'm Chirag</h1><h1>A <b>Software Developer</b> and an <i>Aspiring Entrepreneur</i></h1>
+      <a href="https://www.github.com" class="btn btn-custom" target="blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chiragaggarwal" class="btn btn-custom" target="blank">Linkedin</a>
+      <a href="mailto: chi6rag@gmail.com" class="btn btn-custom" target="blank">Contact</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#particles').particleground({
+        dotColor: 'gray',
+        lineColor: '#383838'
+      });
+      $('.intro').css({
+        'margin-top': -($('.intro').height() / 2)
+      });
+    });
+  </script>
+  </body> 
+</html> 

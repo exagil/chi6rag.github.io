@@ -18,8 +18,9 @@
         /*border-bottom: 0px solid transparent;*/
         box-shadow: none;
         min-height: 70px;
-        border-bottom: 1px solid #e1e1e1;
+        border: 0px solid #e1e1e1;
         margin-bottom: 0px;
+        padding-bottom: 0px;
       }
       .navbar-nav li a, .navbar-brand {
         line-height: 50px;
@@ -40,9 +41,20 @@
         display: inline-block;
       }
 
-      
+      /* active class modification */
+      .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a {
+        background-image: -webkit-linear-gradient(transparent, transparent 100%);
+        background-image: -o-linear-gradient(transparent, transparent 100%);
+        background-image: -webkit-gradient(transparent, transparent 100%);
+        background-image: linear-gradient(transparent, transparent 100%);
+        background-repeat: none;
+        box-shadow: none;
+      }
 
-
+      .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        border-bottom: 5px solid #222222;
+        background-color: transparent;
+      }
       /* navbar ENDS */
 
 

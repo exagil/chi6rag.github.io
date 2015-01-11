@@ -16,12 +16,12 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li style="float: right;"><a href="https://www.github.com/chi6rag"><i class="icon-github" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
-          <li style="float: right;"><a href="https://plus.google.com/+ChiragAggarwal24"><i class="icon-google-plus" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
-          <li style="float: right;"><a href="https://twitter.com/chi6rag"><i class="icon-twitter" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
+          <li style="float: right;"><a href="https://www.github.com/chi6rag" target="_black"><i class="icon-github" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
+          <li style="float: right;"><a href="https://plus.google.com/+ChiragAggarwal24" target="_black"><i class="icon-google-plus" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
+          <li style="float: right;"><a href="https://twitter.com/chi6rag" target="_black"><i class="icon-twitter" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
           {% for page in site.pages %}
             {% if page.title %}
-              <li style="float: right;"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              <li style="float: right;" class="links"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
@@ -30,3 +30,32 @@
   </nav><!-- /.navbar -->  
 </div><!-- /.row -->
 <!-- navbar ends -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    var search, i;
+    var url = document.URL;
+    if( search = url.search(/portfolio/i) > -1 ){
+      var anchorLinks = $('.links').find('a');
+      for(i=0; i<anchorLinks.length; i++){
+        if( anchorLinks[i].innerHTML == 'Portfolio' ){
+          anchorLinks[i].parentElement.classList.add('active');
+        }
+      }
+    }else if( search = url.search(/blog/i) > -1 ){
+      var anchorLinks = $('.links').find('a');
+      for(i=0; i<anchorLinks.length; i++){
+        if( anchorLinks[i].innerHTML == 'Blog' ){
+          anchorLinks[i].parentElement.classList.add('active');
+        }
+      }
+    }else{
+      var anchorLinks = $('.links').find('a');
+      for(i=0; i<anchorLinks.length; i++){
+        if( anchorLinks[i].innerHTML == 'Contact' ){
+          anchorLinks[i].parentElement.classList.add('active');
+        }
+      }
+    }
+
+  });
+</script>

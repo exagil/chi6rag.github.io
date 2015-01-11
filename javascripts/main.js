@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     // calculator
     $(".calculator").on('mouseenter', function(){
-      $(this).prepend("<h4 class='on-hover-heading'>jQuery Calculator<br /><hr />     \
+      $(this).prepend("<h4 class='on-hover-heading'>jQuery Calculator<hr />     \
         <p class='on-hover-paragraph'>I made a functional jQuery Calculator with an awesome UI</p></h4>  \
         ");
     });

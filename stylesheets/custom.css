@@ -4,6 +4,7 @@
         font-family: 'Muli', sans-serif;
         text-transform: uppercase;
         color: #222222;
+        background: url('http://res.cloudinary.com/chi6rag/image/upload/v1420942572/slant_blur_garins_ag493i.png');
       }
 
       /* navbar */
@@ -88,6 +89,7 @@
         font-family: 'Montserrat', sans-serif;
         padding: 20px;
         font-weight: 700;
+        line-height: 10%;
       }
 
       .on-hover-paragraph {
@@ -96,7 +98,8 @@
         font-family: 'Muli', sans-serif;
         font-weight: 400;
         text-transform: none;
-        line-height: 140%;
+        line-height: 120%;
+        font-size: 0.8em;
       }
 
       /* Portfolio ENDS */

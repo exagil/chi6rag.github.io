@@ -1,0 +1,226 @@
+// ---
+// # Only the main Sass file needs front matter (the dashes are enough)
+// ---
+// @charset "utf-8";
+
+
+
+// // Our variables
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+
+
+// // Using media queries with like this:
+// // @include media-query($on-palm) {
+// //     .wrapper {
+// //         padding-right: $spacing-unit / 2;
+// //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
+
+
+
+// // Import partials from `sass_dir` (defaults to `_sass`)
+// @import
+//         "base",
+//         "layout",
+//         "syntax-highlighting"
+// ;
+
+
+
+body {
+  overflow-x: hidden;
+  font-family: 'Muli', sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+  background: url('http://res.cloudinary.com/chi6rag/image/upload/v1420942572/slant_blur_garins_ag493i.png');
+}
+
+/* navbar */
+
+.wrapper {
+  height:100vh; width:100vw;
+  background-position: top;
+}
+#nav-trans {
+  background:transparent;
+  /*border-bottom: 0px solid transparent;*/
+  box-shadow: none;
+  min-height: 70px;
+  border: 0px solid #e1e1e1;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.navbar-nav li a, .navbar-brand {
+  line-height: 50px;
+  font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover{
+  color: #222222;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  font-weight: bold;
+}
+
+.logo-trans {
+  width: 50px; height: auto;
+  position: relative; bottom: 8px;
+  display: inline-block;
+}
+
+/* active class modification */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a {
+  background-image: -webkit-linear-gradient(transparent, transparent 100%);
+  background-image: -o-linear-gradient(transparent, transparent 100%);
+  background-image: -webkit-gradient(transparent, transparent 100%);
+  background-image: linear-gradient(transparent, transparent 100%);
+  background-repeat: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  border-bottom: 5px solid #222222;
+  background-color: transparent;
+}
+/* navbar ENDS */
+
+
+/* Portfolio */
+.col-md-3 {
+padding-left: 0px; padding-right: 0px;
+margin-left: 0px; margin-right: 0px;
+}
+.container-fluid {
+  padding-left: 0px; padding-right: 0px;
+  margin-left: 0px; margin-right: 0px;
+  overflow-x: hidden;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+.excerpt {
+  background-repeat: no-repeat;
+  background-position: 90% 85%;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.9);
+  position: relative;
+}
+
+.excerpt:hover {
+  background-color: black;
+}
+
+.excerpt:hover img {
+  opacity: 0.1;
+}
+
+/* On Hover Text */
+
+.on-hover-heading {
+  position: absolute;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  font-weight: 700;
+  line-height: 10%;
+}
+
+.on-hover-paragraph {
+  display: inline;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 120%;
+  font-size: 0.8em;
+}
+
+/* Portfolio ENDS */
+
+
+/* footer */
+
+.footer h3, .footer h4{
+  text-align: center;
+  word-spacing: 10px;
+  margin: 20px 10px 10px 20px;
+}
+
+.footer h4 {
+  color: #737373;
+  margin-bottom: 70px;
+}
+
+.row {
+  margin-left: 0px; margin-right: 0px;
+}
+
+.pattern {
+  height: 20vh; width: 100vw;
+  background-image: url('http://res.cloudinary.com/chi6rag/image/upload/v1420859255/swirl_pattern_qdlbpu.png');
+}
+
+.footer-social {
+  text-align: center;
+  position: relative; top: 8vh; right: 1vw;
+}
+
+.footer-social>li {
+  display: inline;
+  margin: 20px;
+}
+
+.footer-social li a, .footer-social li a:hover {
+  text-decoration: none;
+}
+
+.icon-github:hover {
+  color: black;
+}
+
+.icon-google-plus:hover {
+  color: red;
+}
+
+.icon-twitter:hover {
+  color: #0084B4;
+}
+
+.icon-github, .icon-google-plus, .icon-twitter {
+  color: #222222;
+}
+/* footer ENDS */
+

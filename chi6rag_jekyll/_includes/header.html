@@ -10,15 +10,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ site.baseurl }}"><img src="http://res.cloudinary.com/chi6rag/image/upload/v1421027881/logo-trans_prk63f.png" class="logo-trans img-responsive"></a>
+        <a class="navbar-brand" href="{{ site.baseurl }}"><img src="http://res.cloudinary.com/chi6rag/image/upload/v1421027881/logo-trans_prk63f.png" class="logo-trans img-responsive" id="logo-blog"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li style="float: right;"><a href="https://www.github.com/chi6rag" target="_black"><i class="icon-github" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
-          <li style="float: right;"><a href="https://plus.google.com/+ChiragAggarwal24" target="_black"><i class="icon-google-plus" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
-          <li style="float: right;"><a href="https://twitter.com/chi6rag" target="_black"><i class="icon-twitter" style="border: 2px solid black; border-radius: 100%; padding: 10px;"></i></a></li>
+          <li style="float: right;"><a href="https://www.github.com/chi6rag" target="_black"><i id="nav-icon-github" class="icon-github"></i></a></li>
+          <li style="float: right;"><a href="https://plus.google.com/+ChiragAggarwal24" target="_black"><i id="nav-icon-google-plus" class="icon-google-plus"></i></a></li>
+          <li style="float: right;"><a href="https://twitter.com/chi6rag" target="_black"><i id="nav-icon-twitter" class="icon-twitter"></i></a></li>
           {% for page in site.pages %}
             {% if page.title %}
               <li style="float: right;" class="links"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -38,19 +38,28 @@
       var anchorLinks = $('.links').find('a');
       for(i=0; i<anchorLinks.length; i++){
         if( anchorLinks[i].innerHTML == 'Portfolio' ){
-          anchorLinks[i].parentElement.classList.add('active');
+          anchorLinks[i].parentElement.classList.add('active-blog');
         }
       }
     }else if( search = url.search(/blog/i) > -1 ){
-      // what to do if the path is blog_path?
       var anchorLinks = $('.links').find('a');
+      var iconGitHub = document.getElementById('nav-icon-github');
+      var iconGooglePlus = document.getElementById('nav-icon-google-plus');
+      var iconTwitter = document.getElementById('nav-icon-twitter');
       for(i=0; i<anchorLinks.length; i++){
+        anchorLinks[i].style.color = "white";
         if( anchorLinks[i].innerHTML == 'Blog' ){
-          anchorLinks[i].parentElement.classList.add('active');
-          // $('body').style.background = "url('http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/img/home-bg.jpg')";
+          anchorLinks[i].parentElement.classList.add('active-blog');
           document.getElementById('base').classList.add('on-blog-background');
         }
       }
+      iconGitHub.style.color = "white";
+      iconGooglePlus.style.color = "white";
+      iconTwitter.style.color = "white";
+      iconGitHub.style.borderColor = "white";
+      iconGooglePlus.style.borderColor = "white";
+      iconTwitter.style.borderColor = "white";
+      document.getElementById('logo-blog').src = "http://res.cloudinary.com/chi6rag/image/upload/v1421035798/logo-trans-white_du7hsx.png";
     }else{
       var anchorLinks = $('.links').find('a');
       for(i=0; i<anchorLinks.length; i++){

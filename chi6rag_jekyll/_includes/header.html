@@ -38,7 +38,7 @@
       var anchorLinks = $('.links').find('a');
       for(i=0; i<anchorLinks.length; i++){
         if( anchorLinks[i].innerHTML == 'Portfolio' ){
-          anchorLinks[i].parentElement.classList.add('active-blog');
+          anchorLinks[i].parentElement.classList.add('active');
         }
       }
     }else if( search = url.search(/blog/i) > -1 ){

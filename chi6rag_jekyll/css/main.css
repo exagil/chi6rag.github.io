@@ -63,9 +63,10 @@ body {
 
 .on-blog-background {
   width: 100vw; height: 70vh;
-  background: url('http://ironsummitmedia.github.io/startbootstrap-clean-blog/img/home-bg.jpg') no-repeat center center;
+  background: url('http://res.cloudinary.com/chi6rag/image/upload/v1421031999/home-bg_zneplo.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  margin-bottom: 8vh;
 }
 
 /* navbar */
@@ -178,6 +179,40 @@ margin-left: 0px; margin-right: 0px;
 }
 
 /* Portfolio ENDS */
+
+/* Blog */
+
+.cool {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cool>a {
+    color: #404040;
+    font-size: 1.4em;
+}
+.cool>a:hover {
+  color: #0085A1;
+  text-decoration: none;
+}
+
+.post-list>li {
+  list-style-type: none;
+}
+
+.post-meta {
+  font-family: 'Lora', serif;
+  text-transform: capitalize;
+  color: gray;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.post-meta>a {
+  color: #404040;
+}
+
+/* Blog ENDS*/
 
 
 /* footer */

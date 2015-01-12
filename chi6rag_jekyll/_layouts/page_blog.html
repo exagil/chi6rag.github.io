@@ -5,12 +5,12 @@
 
   <body>
 
-    <div class="container-fluid wrapper" id="base">
+    <div class="container-fluid" id="base">
       {% include header.html %}
     </div>  <!-- END container-fluid -->
-    <div class="container-fluid wrapper">
-      
+    <div class="container">
+      {{ content }}
     </div>
+    {% include footer.html %}
   </body>
-
 </html>

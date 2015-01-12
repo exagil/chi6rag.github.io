@@ -42,10 +42,13 @@
         }
       }
     }else if( search = url.search(/blog/i) > -1 ){
+      // what to do if the path is blog_path?
       var anchorLinks = $('.links').find('a');
       for(i=0; i<anchorLinks.length; i++){
         if( anchorLinks[i].innerHTML == 'Blog' ){
           anchorLinks[i].parentElement.classList.add('active');
+          // $('body').style.background = "url('http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/img/home-bg.jpg')";
+          document.getElementById('base').classList.add('on-blog-background');
         }
       }
     }else{

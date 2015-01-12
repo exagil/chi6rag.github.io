@@ -61,12 +61,19 @@ body {
   background: url('http://res.cloudinary.com/chi6rag/image/upload/v1420942572/slant_blur_garins_ag493i.png');
 }
 
-/* navbar */
-
-.wrapper {
-  height:100vh; width:100vw;
-  background-position: top;
+.on-blog-background {
+  width: 100vw; height: 70vh;
+  background: url('http://ironsummitmedia.github.io/startbootstrap-clean-blog/img/home-bg.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
 }
+
+/* navbar */
+/*
+.wrapper {
+  height:70vh; width:100vw;
+  background-position: top;
+}*/
 #nav-trans {
   background:transparent;
   /*border-bottom: 0px solid transparent;*/

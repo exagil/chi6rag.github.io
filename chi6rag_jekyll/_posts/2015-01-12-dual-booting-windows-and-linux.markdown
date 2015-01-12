@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page_blog
 title:  "Dual booting Windows and Linux"
 date:   2015-01-11 09:06:00
-categories: Tech
+categories: blog tech
 ---
 
 When I for the first time wanted to try out Linux, I couldn't at first glance find a simple guide on how to dual-boot Windows and Linux. So I decided to write a quick simple guide for you, to give an overview of how to create your own dual boot system. You should have the following stuff solved before you try this out:

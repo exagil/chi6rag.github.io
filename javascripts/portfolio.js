@@ -32,6 +32,16 @@ $(document).ready(function(){
       $(this).find("h4").remove();
     });
 
+    // gitatranslation
+    $(".gitatranslation").on('mouseenter', function(){
+      $(this).prepend("<h4 class='on-hover-heading'>Git A Translation<br /><hr />     \
+        <p class='on-hover-paragraph'>A HackPSU product for making open source projects on Github more accessible across the world</p></h4>  \
+        ");
+    });
+    $(".gitatranslation").on('mouseleave', function(){
+      $(this).find("h4").remove();
+    });
+
     // rails
     $(".rails").on('mouseenter', function(){
       $(this).prepend("<h4 class='on-hover-heading'>Rails Contributions<br /><hr />     \
@@ -61,6 +71,16 @@ $(document).ready(function(){
         ");
     });
     $(".rakshak").on('mouseleave', function(){
+      $(this).find("h4").remove();
+    });
+
+    // learnlist
+    $(".learnlist").on('mouseenter', function(){
+      $(this).prepend("<h4 class='on-hover-heading'>Learnlist<br /><hr />     \
+        <p class='on-hover-paragraph'>Learnlist gives you a step by step way to master a skill</p></h4>  \
+        ");
+    });
+    $(".learnlist").on('mouseleave', function(){
       $(this).find("h4").remove();
     });
 });

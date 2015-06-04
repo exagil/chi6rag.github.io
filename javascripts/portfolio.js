@@ -45,7 +45,7 @@ $(document).ready(function(){
     // rails
     $(".rails").on('mouseenter', function(){
       $(this).prepend("<h4 class='on-hover-heading'>Rails Contributions<br /><hr />     \
-        <p class='on-hover-paragraph'>I love to improve Rails, that too, my way</p></h4>  \
+        <p class='on-hover-paragraph'>Though I don't contribute into Rails, I aspire to be an active contributor</p></h4>  \
         ");
     });
     $(".rails").on('mouseleave', function(){

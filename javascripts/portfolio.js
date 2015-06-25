@@ -83,8 +83,9 @@ $(document).ready(function(){
     $(".learnlist").on('mouseleave', function(){
       $(this).find("h4").remove();
     });
+
     // worder
-    $(".worder")on('mouseenter', function(){
+    $(".worder").on('mouseenter', function(){
       $(this).prepend("<h4 class='on-hover-heading'>Worder<br /><hr />     \
         <p class='on-hover-paragraph'>Sharpen your vocabulary using Worder on your FirefoxOS device</p></h4>  \
         ");

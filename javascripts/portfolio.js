@@ -24,8 +24,8 @@ $(document).ready(function(){
 
     // rideshare
     $(".rideshare").on('mouseenter', function(){
-      $(this).prepend("<h4 class='on-hover-heading'>Rideshare<br /><hr />     \
-        <p class='on-hover-paragraph'>I developed RideShare, for people who like to travel in budget</p></h4>  \
+      $(this).prepend("<h4 class='on-hover-heading'>ShareCab<br /><hr />     \
+        <p class='on-hover-paragraph'>I developed ShareCab, for people who like to travel in budget</p></h4>  \
         ");
     });
     $(".rideshare").on('mouseleave', function(){

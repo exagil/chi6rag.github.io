@@ -8,7 +8,7 @@ $(document).ready(function(){
         <p class='on-hover-paragraph'>AndroidCalculator is an awesome Calculator with a niche design and a sleek UI</p></h4>  \
         ");
     });
-    $(".calculator").on('mouseleave', function(){
+    $(".android-calculator").on('mouseleave', function(){
       $(this).find("h4").remove();
     });
 

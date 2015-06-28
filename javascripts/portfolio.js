@@ -2,10 +2,10 @@ $(document).ready(function(){
   
   // row one
 
-    // calculator
-    $(".calculator").on('mouseenter', function(){
-      $(this).prepend("<h4 class='on-hover-heading'>jQuery Calculator<hr />     \
-        <p class='on-hover-paragraph'>I made a functional jQuery Calculator with an awesome UI</p></h4>  \
+    // android-calculator
+    $(".android-calculator").on('mouseenter', function(){
+      $(this).prepend("<h4 class='on-hover-heading'>AndroidCalculator<hr />     \
+        <p class='on-hover-paragraph'>AndroidCalculator is an awesome Calculator with a niche design and a sleek UI</p></h4>  \
         ");
     });
     $(".calculator").on('mouseleave', function(){

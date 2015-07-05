@@ -2,13 +2,13 @@ $(document).ready(function(){
   
   // row one
 
-    // calculator
-    $(".calculator").on('mouseenter', function(){
-      $(this).prepend("<h4 class='on-hover-heading'>jQuery Calculator<hr />     \
-        <p class='on-hover-paragraph'>I made a functional jQuery Calculator with an awesome UI</p></h4>  \
+    // android-calculator
+    $(".android-calculator").on('mouseenter', function(){
+      $(this).prepend("<h4 class='on-hover-heading'>AndroidCalculator<hr />     \
+        <p class='on-hover-paragraph'>AndroidCalculator is an awesome Calculator with a niche design and a sleek UI</p></h4>  \
         ");
     });
-    $(".calculator").on('mouseleave', function(){
+    $(".android-calculator").on('mouseleave', function(){
       $(this).find("h4").remove();
     });
 
@@ -24,8 +24,8 @@ $(document).ready(function(){
 
     // rideshare
     $(".rideshare").on('mouseenter', function(){
-      $(this).prepend("<h4 class='on-hover-heading'>Rideshare<br /><hr />     \
-        <p class='on-hover-paragraph'>I developed RideShare, for people who like to travel in budget</p></h4>  \
+      $(this).prepend("<h4 class='on-hover-heading'>ShareCab<br /><hr />     \
+        <p class='on-hover-paragraph'>I developed ShareCab, for people who like to travel in budget</p></h4>  \
         ");
     });
     $(".rideshare").on('mouseleave', function(){
@@ -81,6 +81,16 @@ $(document).ready(function(){
         ");
     });
     $(".learnlist").on('mouseleave', function(){
+      $(this).find("h4").remove();
+    });
+
+    // worder
+    $(".worder").on('mouseenter', function(){
+      $(this).prepend("<h4 class='on-hover-heading'>Worder<br /><hr />     \
+        <p class='on-hover-paragraph'>Sharpen your vocabulary using Worder on your FirefoxOS device</p></h4>  \
+        ");
+    });
+    $(".worder").on('mouseleave', function(){
       $(this).find("h4").remove();
     });
 });

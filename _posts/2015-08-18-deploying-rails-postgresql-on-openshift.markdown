@@ -50,5 +50,11 @@ Who hasn't struggled in deploying a Ruby on Rails App on OpenShift? Server timeo
     rhc tail <your_app_name>
 13. In my case, there was a conflict in the version of rack, [here's how I resolved it](http://stackoverflow.com/questions/28346389/ruby-bundle-install-error-on-openshift)
 
-This would make your app up and running.
+This would make your app up and running.  
 Cheers!
+
+References:  
+1. [Tutorial - Deploying the ToDo application to OpenShift - Ruby on Rails](http://www.arubystory.com/2013/12/tutorial-todo-rails-openshift.html)  
+2. [OpenShift is a Rails friendly PaaS – Part 1](https://blog.openshift.com/openshift-is-a-rails-friendly-paas-part-1/)  
+3. [Getting Started with OpenShift Online](https://developers.openshift.com/en/getting-started-overview.html)  
+4. [Deploying Ruby on Rails - OpenShift](https://developers.openshift.com/en/ruby-deploying-rails.html)  

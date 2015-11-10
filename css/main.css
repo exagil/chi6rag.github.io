@@ -171,6 +171,32 @@ margin-left: 0px; margin-right: 0px;
   color: #404040;
 }
 
+#blog .page-title {
+  font-size: 6vmin;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+#blog h3 {
+  margin-top: 1.4em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#blog pre {
+  padding: 2em;
+  width: 90%;
+  margin: 1.5em auto;
+  font-size: 2vmin;
+}
+
+#blog {
+  text-transform: none;
+  font-size: 2.4vmin;
+  line-height: 2em;
+}
+
 /* Blog ENDS*/
 
 

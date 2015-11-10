@@ -229,15 +229,25 @@ margin-left: 0px; margin-right: 0px;
 }
 /* footer ENDS */
 
-
-
-
-
-
 /* Contact Page */
 
-.input {
-  
+#contact .contact-form .text-field, #contact .contact-form .message-area {
+  padding: 1.5em;
+  padding-left: 1em;
+  font-size: 2vmin;
+  border-radius: 0px;
+  width: 100%;
+}
+
+#contact .contact-form .message-area {
+  max-width: 100%;
+}
+
+#contact .contact-form #submit {
+  border-radius: 0px;
+  background: #45B6D8;
+  border-color: #45B6D8;
+  width: 100%;
 }
 
 /* Contact Page END 

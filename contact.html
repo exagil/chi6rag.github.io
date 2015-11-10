@@ -4,28 +4,21 @@ title: Contact
 permalink: /contact/
 ---
 
-<div class="container" style="margin-top: 10vh;">
+<div id="contact" class="container" style="margin-top: 10vh;">
   <div class="row">
-    <form role="form" action="http://pooleapp.com/stash/60bd023b-7230-474c-8c55-2a50cabcf5f9/" method="POST">
+    <form role="form" action="http://pooleapp.com/stash/60bd023b-7230-474c-8c55-2a50cabcf5f9/"
+          class="contact-form" method="POST">
       <input type="hidden" name="redirect_to" value="{{ site.url/portfolio }}" />
       <div class="col-md-6 col-md-offset-3">
         <div class="form-group">
-          <div class="input-group">
-            <input type="text" class="form-control" name="Name" id="InputName" placeholder="Name" required />
-            <span class="input-group-addon"></span>
-          </div>
+          <input type="text" class="form-control text-field" name="Name" id="InputName" placeholder="Name" required />
         </div>
       <div class="form-group">
-        <div class="input-group">
-          <input type="email" class="form-control" id="InputEmail" name="Email" placeholder="Email" required />
-          <span class="input-group-addon"></span>
-        </div>
+        <input type="email" class="form-control text-field" id="InputEmail" name="Email" placeholder="Email" required />
       </div>
       <div class="form-group">
-        <div class="input-group">
-          <textarea name="Message" id="InputMessage" class="form-control" rows="5" placeholder="Message" required></textarea>
-          <span class="input-group-addon"></span>
-        </div>
+        <textarea name="Message" id="InputMessage message-field" class="form-control message-area"
+                  rows="5" placeholder="Message" required></textarea>
       </div>
       <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
     </div>
@@ -33,4 +26,3 @@ permalink: /contact/
 
   </div><!-- END row -->
 </div><!-- END container -->
-

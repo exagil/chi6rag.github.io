@@ -171,16 +171,28 @@ margin-left: 0px; margin-right: 0px;
   color: #404040;
 }
 
+#blog {
+  text-transform: none;
+  font-size: 2.4vmin;
+  line-height: 2em;
+}
+
 #blog .page-title {
   font-size: 6vmin;
   margin-bottom: 1em;
   text-transform: uppercase;
+  color: #333333;
+}
+
+#blog p, #blog h3 {
+  color: #505050;
 }
 
 #blog h3 {
-  margin-top: 1.4em;
+  color: #333333;
+  margin-top: 2em;
   margin-bottom: 1em;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
 }
 
@@ -191,10 +203,10 @@ margin-left: 0px; margin-right: 0px;
   font-size: 2vmin;
 }
 
-#blog {
-  text-transform: none;
-  font-size: 2.4vmin;
-  line-height: 2em;
+#blog blockquote {
+  color: #7B7474;
+  line-height: 1.2em;
+  margin-bottom: 2em;
 }
 
 /* Blog ENDS*/
